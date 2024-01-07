@@ -3,92 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAK!S - Producent Muzyczny</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        section {
-            padding: 2em;
-        }
-
-        .album {
-            margin-bottom: 2em;
-            cursor: pointer;
-        }
-
-        .album:hover {
-            transform: scale(1.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Brooks Music Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>NAK!S</h1>
-        <img src="logo.png" alt="NAK!S Logo" width="100">
+        <h1>Brooks</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section>
-        <h2>Utwory</h2>
-
-        <div class="album" onclick="showDetails('UtwÃ³r 1', 'okladka1.jpg')">
-            <img src="okladka1.jpg" alt="UtwÃ³r 1" width="150">
-            <p>UtwÃ³r 1</p>
-        </div>
-
-        <div class="album" onclick="showDetails('UtwÃ³r 2', 'okladka2.jpg')">
-            <img src="okladka2.jpg" alt="UtwÃ³r 2" width="150">
-            <p>UtwÃ³r 2</p>
-        </div>
-
-        <!-- Dodaj wiÄcej albumÃ³w wedÅug potrzeb -->
-
-        <div id="detailsModal" style="display: none;">
-            <img id="albumCover" alt="OkÅadka">
-            <h3 id="albumTitle"></h3>
-        </div>
-    </section>
-
-    <section>
-        <h2>OdnoÅniki SpoÅecznoÅciowe</h2>
-        <p>
-            <a href="<!-- Dodaj link -->" target="_blank">Instagram</a> |
-            <a href="<!-- Dodaj link -->" target="_blank">Facebook</a>
-        </p>
-    </section>
-
+    <main>
+        <section>
+            <h2>Latest Releases</h2>
+            <!-- Add the rest of the music information here -->
+        </section>
+        <section>
+            <h2>Tour Dates</h2>
+            <!-- Add the tour dates information here -->
+        </section>
+    </main>
     <footer>
-        &copy; 2024 NAK!S. Wszelkie prawa zastrzeÅ¼one.
+        <p>&copy; 2022 Brooks Music Page. All rights reserved.</p>
     </footer>
-
-    <script>
-        function showDetails(title, cover) {
-            document.getElementById('albumTitle').innerText = title;
-            document.getElementById('albumCover').src = cover;
-            document.getElementById('detailsModal').style.display = 'block';
-        }
-    </script>
 </body>
 </html>
