@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brooks Music Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>NAK!S - Producent muzyczny</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Przełącznik trybu dziennego i nocnego -->
+    <button id="mode-toggle">Tryb Nocny</button>
+
+    <!-- Nagłówek strony -->
     <header>
-        <h1>Brooks</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>NAK!S</h1>
+        <p>Producent muzyczny</p>
     </header>
-    <main>
-        <section>
-            <h2>Latest Releases</h2>
-            <!-- Add the rest of the music information here -->
-        </section>
-        <section>
-            <h2>Tour Dates</h2>
-            <!-- Add the tour dates information here -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2022 Brooks Music Page. All rights reserved.</p>
-    </footer>
+
+    <!-- Sekcja linków do Spotify i YouTube -->
+    <section id="social-media">
+        <h2>Znajdź mnie na:</h2>
+        <div class="links">
+            <a href="https://spotify.com" target="_blank">Spotify</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+        </div>
+    </section>
+
+    <!-- Sekcja nadchodzących koncertów -->
+    <section id="concerts">
+        <h2>Nadchodzące koncerty</h2>
+        <ul>
+            <li>12 Listopada 2024 - Kraków, Klub XYZ</li>
+            <li>5 Grudnia 2024 - Warszawa, Klub ABC</li>
+            <li>20 Stycznia 2025 - Wrocław, Klub DEF</li>
+        </ul>
+    </section>
+
+    <!-- Sekcja biografii -->
+    <section id="bio">
+        <h2>Biografia</h2>
+        <p>NAK!S to producent muzyczny z pasją do tworzenia niepowtarzalnych brzmień...</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
